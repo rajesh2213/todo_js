@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resP</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-toggle clicked">
+        <span></span>
+      </div>
+      <h1>lol</h1>
+    </header>
+    <nav class="show">
+      <div class="nav-title">
+        <h2>Projects</h2>
+        <button id="open-project-btn">+</button>
+      </div>
+      <div class="all-task">
+        <button class="task-btn clicked" disabled>All tasks</button>
+      </div>
+      <div class="nav-content"></div>
+    </nav>
+    <main>
+      <div class="main-title">
+        <h2>Tasks</h2>
+        <button class="open-task-btn">+</button>
+      </div>
+      <div class="main-content"></div>
+    </main>
+    <dialog id="add-project">
+      <h2>Add a new project</h2>
+      <form>
+        <label for="project-name">Name</label>
+        <input type="text" name="projectName" id="project-name" />
+        <button class="add-project-btn" type="submit">add</button>
+      </form>
+    </dialog>
+    <dialog id="add-task">
+        <h2>Add a new project</h2>
+        <form>
+          <label for="task-name">Name:</label>
+          <input type="text" name="taskName" id="task-name" />
+          <label for="task-description">Description:</label>
+          <input type="text" name="taskDescription" id="task-description" />
+          <label for="task-due">Due Date:</label>
+          <input type="date" name="taskDueDate" id="task-due" />
+          <button class="add-task-btn" type="submit">add</button>
+        </form>
+      </dialog>
+      <dialog id="edit-task">
+        <h2>Edit Task</h2>
+        <form>
+          <label for="task-name">Name:</label>
+          <input type="text" name="taskName" id="task-name" />
+          <label for="task-description">Description:</label>
+          <input type="text" name="taskDescription" id="task-description" />
+          <label for="task-due">Due Date:</label>
+          <input type="date" name="taskDueDate" id="task-due" />
+          <button class="confirm-task-btn" type="submit">edit</button>
+        </form>
+      </dialog>
+  </body>
+</html>
